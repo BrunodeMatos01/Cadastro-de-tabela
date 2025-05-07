@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <title>Cadastro</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card1">
+      <p>TABELA AGÊNCIA</p>
+      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalAgencia">CADASTRAR</button>        
+    </div>
+    <div class="card2">
+      <p>TABELA CLIENTE</p>
+      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalCliente">CADASTRAR</button>        
+    </div>
+    <div class="card3">
+      <p>TABELA CONTA</p>
+      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalConta">CADASTRAR</button>
+    </div>
+  </div>
+
+<div class="modal fade" id="modalAgencia" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cadastro de Agência</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nome da Agência *</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Cidade</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Ativos</label>
+              <input type="number" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="Cancelar" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="Salvar">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+<div class="modal fade" id="modalCliente" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cadastro de Cliente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nome do Cliente *</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Endereço</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Cidade</label>
+              <input type="text" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="Cancelar" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="Salvar">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="modal fade" id="modalConta" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cadastro de Conta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nome da Agência *</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nome do Cliente *</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Número da Conta *</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Saldo</label>
+            <input type="number" step="0.01" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="Cancelar" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="Salvar">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
